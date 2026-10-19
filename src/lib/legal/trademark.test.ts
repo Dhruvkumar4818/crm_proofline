@@ -15,13 +15,12 @@ const root = resolve(import.meta.dirname, "../../..");
 describe("Proofline trademark", () => {
   it("names the mark, the rights holder, and the permission requirement", () => {
     expect(PROOFLINE_MARK).toBe("Proofline");
-    expect(PROOFLINE_RIGHTS_HOLDER).toBe("Arjun-Walia and Abhishek");
+    expect(PROOFLINE_RIGHTS_HOLDER).toBe("Dhruv Kumar");
     expect(PROOFLINE_RIGHTS_HOLDERS.map((holder) => holder.github)).toEqual([
-      "Arjun-Walia",
-      "itsawesomeabhishek",
+      "Dhruvkumar4818",
     ]);
-    expect(PROOFLINE_NOTICE).toContain("trademark of Arjun-Walia");
-    expect(PROOFLINE_NOTICE).toContain("github.com/itsawesomeabhishek");
+    expect(PROOFLINE_NOTICE).toContain("trademark of Dhruv Kumar");
+    expect(PROOFLINE_NOTICE).toContain("github.com/Dhruvkumar4818");
     expect(PROOFLINE_NOTICE).toContain("prior written permission");
   });
 
@@ -37,9 +36,9 @@ describe("Proofline trademark", () => {
     expect(home).toContain("PROOFLINE_NOTICE");
     expect(manifest).toContain('from "@/lib/legal/trademark"');
     expect(license).toContain("prior written permission");
-    expect(license).toContain("github.com/itsawesomeabhishek");
-    expect(license).toContain("Abhishek");
+    expect(license).toContain("github.com/Dhruvkumar4818");
+    expect(license).toContain("Dhruv Kumar");
     expect(pkg).toContain('"UNLICENSED"');
-    expect(pkg).toContain("itsawesomeabhishek");
+    expect(pkg).toContain("Dhruvkumar4818");
   });
 });

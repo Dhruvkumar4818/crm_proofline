@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "UNLICENSED",
-  "author": "Arjun-Walia (https://github.com/Arjun-Walia)",
-  "contributors": [
-    "Abhishek (https://github.com/itsawesomeabhishek)"
-  ],
+  "author": "Dhruv Kumar (https://github.com/Dhruvkumar4818)",
   "description": "Proofline — rank open deals from your records and approve who to contact first.",
   "engines": {
     "node": ">=20.0.0"

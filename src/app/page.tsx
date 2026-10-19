@@ -17,11 +17,17 @@ export const metadata: Metadata = {
 };
 
 export default async function RootPage() {
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (user) redirect('/decisions');
+  try {
+    if (process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+      const supabase = await createClient();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (user) redirect('/decisions');
+    }
+  } catch {
+    // Continue to landing page if Supabase client cannot be initialized
+  }
 
   return <HomePage />;
 }

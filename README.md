@@ -111,7 +111,7 @@ Do not commit `.env.local`, service-role keys, the encryption key, Meta secrets,
 
 ## License
 
-Proofline is proprietary. See `LICENSE`. The name and mark are a trademark of Arjun-Walia (https://github.com/Arjun-Walia) and Abhishek (https://github.com/itsawesomeabhishek). Nothing in this repository grants permission to copy or use them.
+Proofline is proprietary. See `LICENSE`. The name and mark are a trademark of Dhruv Kumar (https://github.com/Dhruvkumar4818). Nothing in this repository grants permission to copy or use them.
 
 ## Brand files
 
